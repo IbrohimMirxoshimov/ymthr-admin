@@ -1,0 +1,607 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=' />
+    <title>{{text.new_reservation}}</title>
+  </head>
+
+  <body>
+    <div>
+      <table
+        style='width:100%;background-color:#eaeaea'
+        cellspacing='0'
+        cellpadding='0'
+        border='0'
+      >
+        <tbody>
+          <tr>
+            <td width='100%' valign='top' style='padding:0 10px' align='center'>
+              <table
+                style='border-spacing:0;width:620px;max-width:620px;min-width:620px'
+                cellspacing='0'
+                cellpadding='0'
+                border='0'
+                align='center'
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style='color:transparent;font-size:0;height:0;line-height:0;padding:0;width:0'
+                    >
+                      &nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="font-family:'Roboto','Arial',sans-serif;font-weight:400;padding:36px 0"
+                    >
+                      <table
+                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                        cellspacing='0'
+                        cellpadding='0'
+                        border='0'
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              width='580'
+                              style="font-family:'Roboto','Arial',sans-serif;font-weight:400;line-height:100%;padding:0 0 24px;text-align:center"
+                            >
+                              <a
+                                style='color:#2d3137;text-decoration:none'
+                                href='https://admin.bookhotel.uz'
+                                target='_blank'
+                              >
+                                <img
+                                  width='216'
+                                  style='border:0;height:auto'
+                                  src='https://admin.bookhotel.uz/img/logo-light.png'
+                                  alt='bookhotel.uz'
+                                  class='CToWUd'
+                                  data-bit='iit'
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table
+                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                        cellspacing='0'
+                        cellpadding='0'
+                        border='0'
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              width='580'
+                              style="color:#202c36;font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:0 0 24px"
+                            >
+                              <table
+                                style='border-spacing:0;font-family:sans-serif;width:100%'
+                                cellspacing='0'
+                                cellpadding='0'
+                                border='0'
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width='580'
+                                      style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:24px;font-weight:500;line-height:32px;padding:0 20px 24px;text-align:center"
+                                    >
+                                      {{text.new_reservation}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table
+                                style='border-spacing:0;font-family:sans-serif;background-color:#ffffff;border-radius:8px'
+                                cellspacing='0'
+                                cellpadding='0'
+                                border='0'
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width='620'
+                                      style="font-family:'Roboto','Arial',sans-serif;font-weight:400;line-height:100%;padding:0"
+                                    >
+                                      <table
+                                        style="overflow:hidden;background-color:#555b63;background-image:url('{{property_main_photo}}');background-position:center;background-size:cover;border-radius:8px 8px 0 0;border-spacing:0;font-family:sans-serif;width:100%"
+                                        cellspacing='0'
+                                        cellpadding='0'
+                                        border='0'
+                                      >
+                                        <tbody>
+                                          <tr
+                                            style='background:#636363;background-color:rgba(0,0,0,0.7)'
+                                          >
+                                            <td
+                                              style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:16px 20px 24px"
+                                            >
+                                              <p
+                                                style='color:#ffffff;font-size:16px;font-weight:500;line-height:18px;margin-bottom:6px;margin-left:0;margin-right:0;margin-top:0'
+                                              >
+                                                {{property_name}}
+                                              </p>
+                                              <p
+                                                style='color:#b4b6b5;line-height:18px;margin-bottom:15px;margin-left:0;margin-right:0;margin-top:0'
+                                              >
+                                                <a
+                                                  style='color:#b4b6b5;text-decoration:none'
+                                                >
+                                                  {{property_address_line}}
+                                                </a>
+                                              </p>
+                                              <table
+                                                style='border-spacing:0;font-family:sans-serif;vertical-align:top;width:100%'
+                                                cellspacing='0'
+                                                cellpadding='0'
+                                                border='0'
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:0 24px 16px 0"
+                                                    >
+                                                      <p
+                                                        style='color:#b4b6b5;line-height:18px;margin-bottom:7px;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{text.guest}}</p>
+                                                      <p
+                                                        style='color:#ffffff;font-size:16px;font-weight:500;line-height:18px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{guest_full_name}}
+                                                      </p>
+                                                    </td>
+                                                    <td
+                                                      style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:0 0 16px 24px"
+                                                    >
+                                                      <p
+                                                        style='color:#b4b6b5;line-height:18px;margin-bottom:7px;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{text.nutrition}}</p>
+                                                      <p
+                                                        style='color:#ffffff;font-size:16px;font-weight:500;line-height:18px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{nutrition_type}}
+                                                      </p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td
+                                                      style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:0 24px 0 0"
+                                                    >
+                                                      <p
+                                                        style='color:#b4b6b5;line-height:18px;margin-bottom:7px;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{text.checkin}}</p>
+                                                      <p
+                                                        style='color:#ffffff;font-size:16px;font-weight:500;line-height:18px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{checkin_date}}
+                                                        <span
+                                                          style='color:#b4b6b5;font-weight:400'
+                                                        >
+                                                          {{checkin_date_time}}
+                                                        </span></p>
+                                                    </td>
+                                                    <td
+                                                      style="border-left:1px solid #b4b6b5;font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:0 0 0 24px"
+                                                    >
+                                                      <p
+                                                        style='color:#b4b6b5;line-height:18px;margin-bottom:7px;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{text.checkout}}</p>
+                                                      <p
+                                                        style='color:#ffffff;font-size:16px;font-weight:500;line-height:18px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0'
+                                                      >
+                                                        {{checkout_date}}
+                                                        <span
+                                                          style='color:#b4b6b5;font-weight:400'
+                                                        >
+                                                          {{checkout_date_time}}
+                                                        </span></p>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table
+                                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                                        cellspacing='0'
+                                        cellpadding='0'
+                                        border='0'
+                                      >
+                                        <tbody>
+                                          {{#each records}}
+                                            <tr>
+                                              <td
+                                                width='64'
+                                                style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:24px 16px 24px 20px"
+                                              >
+                                                <img
+                                                  width='64'
+                                                  style='border:0;border-radius:3px;height:auto'
+                                                  src='{{room_photo}}'
+                                                  class='CToWUd'
+                                                  data-bit='iit'
+                                                />
+                                              </td>
+                                              <td
+                                                style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:24px 20px 24px 0"
+                                              >
+                                                <p
+                                                  style='color:#2d3137;font-size:16px;font-weight:500;line-height:22px;margin-bottom:3px;margin-left:0;margin-right:0;margin-top:0;text-decoration:none'
+                                                >
+                                                  {{room_type}}</p>
+                                                <p
+                                                  style='color:#2d3137;line-height:18px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0;text-decoration:none'
+                                                >
+                                                  <b
+                                                    style='font-weight:500'
+                                                  >{{room_count}}:
+                                                  </b>
+                                                  {{guest_count}}
+                                                </p>
+                                              </td>
+                                            </tr>
+                                          {{/each}}
+
+                                        </tbody>
+                                      </table>
+                                      <table
+                                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                                        cellspacing='0'
+                                        cellpadding='0'
+                                        border='0'
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style='font-size:0;font-weight:400;line-height:0;padding:0'
+                                              height='24'
+                                            >
+                                              <div
+                                                style='background-color:#eaeaea;border-bottom-right-radius:24px;border-top-right-radius:24px;height:24px;width:12px'
+                                              >
+                                                &nbsp;</div>
+                                            </td>
+                                            <td
+                                              width='596'
+                                              style="font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:100%;padding:0"
+                                              height='24'
+                                            >
+                                              <hr
+                                                style='width:596px;height:0;padding:0;margin:0;border:0;border-top:3px dashed #eaeaea'
+                                              />
+                                            </td>
+                                            <td
+                                              style='font-size:0;font-weight:400;line-height:0;padding:0'
+                                              height='24'
+                                            >
+                                              <div
+                                                style='background-color:#eaeaea;border-bottom-left-radius:24px;border-top-left-radius:24px;height:24px;width:12px'
+                                              >
+                                                &nbsp;</div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table
+                                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                                        cellspacing='0'
+                                        cellpadding='0'
+                                        border='0'
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:24px 20px;vertical-align:top"
+                                            >
+                                              {{text.reservation}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:24px 20px;vertical-align:top"
+                                            >
+                                              {{reservation_id}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.reservation_created_at}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{reservation_created_at}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.payment_method}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{payment_method}}</td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.rate}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{rate_name}}</td>
+                                          </tr>
+                                          <tr>
+                                            {{!-- <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.prepayment}}</td> <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{prepayment_policy}}</td> --}}
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.sum_prepayment}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:500;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{sum_prepayment}}
+                                            </td>
+                                          </tr>
+                                          {{!-- <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.free_cancelation}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{free_cancelation}}</td>
+                                          </tr> --}}
+                                          {{!-- <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.cancelation_policy}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 14px;vertical-align:top"
+                                            >
+                                              <p
+                                                style='margin-bottom:10px;margin-left:0;margin-right:0;margin-top:0'
+                                              >
+                                                {{cancelation_policy}}
+                                              </p>
+                                            </td>
+                                          </tr> --}}
+                                          {{! <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              Политика незаезда</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              В случае незаезда штраф — 100 % от
+                                              стоимости бронирования —
+                                              5&nbsp;100&nbsp;000&nbsp;UZS
+                                            </td>
+                                          </tr> }}
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px"
+                                            >
+                                              {{text.reservation_total}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:20px;font-weight:500;line-height:20px;padding:0 20px 24px"
+                                            >
+                                              {{reservation_total}}
+                                            </td>
+                                          </tr>
+                                          {{!-- <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.daily_breakdown}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              <table
+                                                style='border-spacing:0;font-family:sans-serif;width:100%'
+                                                cellspacing='0'
+                                                cellpadding='0'
+                                                border='0'
+                                              >
+                                                <tbody>
+                                                  {{#each dayly_costs}}
+                                                    <tr>
+                                                      <td
+                                                        width='130'
+                                                        style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 5px 3px 0"
+                                                      >
+                                                        {{day_month_name}}</td>
+                                                      <td
+                                                        style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:500;line-height:20px;padding:0 0 3px 5px"
+                                                      >
+                                                        {{day_cost}}
+                                                      </td>
+                                                    </tr>
+                                                  {{/each}}
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr> --}}
+                                          <tr>
+                                            <td
+                                              width='230'
+                                              style="color:#868686;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{text.comment_customer}}</td>
+                                            <td
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:20px;padding:0 20px 24px;vertical-align:top"
+                                            >
+                                              {{comment_customer}}
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table
+                                        style='border-spacing:0;font-family:sans-serif;width:100%'
+                                        cellspacing='0'
+                                        cellpadding='0'
+                                        border='0'
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              width='580'
+                                              style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:16px;font-weight:400;line-height:100%;padding:16px 20px 24px"
+                                            >
+                                              <table
+                                                style='background-color:#3e79f7;border-radius:4px;border-spacing:0;font-family:sans-serif;text-align:center;width:100%'
+                                                cellspacing='0'
+                                                cellpadding='0'
+                                                border='0'
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      style="color:#2d3137;font-family:'Roboto','Arial',sans-serif;font-size:18px;font-weight:400;line-height:100%;height:48px;padding:0"
+                                                    >
+                                                      <a
+                                                        style='line-height:48px;display:block;padding:0 20px;color:#ffffff;text-decoration:none'
+                                                        href='https://admin.bookhotel.uz/app/reservations/{{reservation_id}}'
+                                                        target='_blank'
+                                                      >
+                                                        {{text.go_to_reservation}}
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table
+                        style='background-color:#3e79f7;border-radius:8px;border-spacing:0;font-family:sans-serif;width:100%'
+                        cellspacing='0'
+                        cellpadding='0'
+                        border='0'
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              width='532'
+                              style="font-family:'Roboto','Arial',sans-serif;font-size:14px;font-weight:400;line-height:100%;padding:20px;filter:brightness(4);background-image:url('https://storage-ng-email.s3.amazonaws.com/extranet/bg-support.png');background-position:430px center;background-size:170px auto;background-repeat:no-repeat;"
+                              height='144'
+                            >
+                              <table
+                                style='border-spacing:0;font-family:sans-serif;width:100%'
+                                cellspacing='0'
+                                cellpadding='0'
+                                border='0'
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      style="color:#ffffff;font-family:'Roboto','Arial',sans-serif;font-weight:400;font-size:16px;line-height:22px;padding:0 0 4px"
+                                    >
+                                      {{text.need_support}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="color:#ffffff;font-family:'Roboto','Arial',sans-serif;font-weight:500;font-size:20px;line-height:24px;padding:0 0 4px"
+                                    >
+                                      {{text.property_support_deparment}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="color:#ffffff;font-family:'Roboto','Arial',sans-serif;font-weight:400;font-size:16px;line-height:100%;padding:12px 0 0"
+                                    >
+                                      <a
+                                        style='color:#ffffff;text-decoration:none'
+                                        href='mailto:{{support.email}}'
+                                        target='_blank'
+                                      ><img
+                                          width='18'
+                                          style='border:0;height:auto;vertical-align:middle'
+                                          src='https://storage-ng-email.s3.amazonaws.com/extranet/icon-email.png'
+                                          alt='Email:'
+                                          class='CToWUd'
+                                          data-bit='iit'
+                                        />{{support.email}}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="color:#ffffff;font-family:'Roboto','Arial',sans-serif;font-weight:400;font-size:16px;line-height:100%;padding:12px 0 0"
+                                    >
+                                      <a
+                                        style='color:#ffffff;text-decoration:none'
+                                        href='tel:{{support.phone}}'
+                                        target='_blank'
+                                      ><img
+                                          width='18'
+                                          style='border:0;height:auto;vertical-align:middle'
+                                          src='https://storage-ng-email.s3.amazonaws.com/extranet/icon-phone.png'
+                                          alt='Phone:'
+                                          class='CToWUd'
+                                          data-bit='iit'
+                                        /> {{support.phone}}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- <p
+											style="color:#969696;font-size:14px;line-height:20px;margin-bottom:0;margin-left:0;margin-right:0;margin-top:20px;text-align:center">
+											Если не хотите получать такие письма, то Вы можете <a
+												style="color:#969696;text-decoration:underline"
+												target="_blank" ></a>
+										</p> -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+</html>
