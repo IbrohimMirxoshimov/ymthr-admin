@@ -11,6 +11,7 @@ import './dotenv';
  */
 import { AppModule } from './app.module';
 import validationOptions from './utils/validation-options';
+import { json, urlencoded } from 'express';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
@@ -21,6 +22,8 @@ async function bootstrap() {
   app.setGlobalPrefix(configService.get('app.apiPrefix')!, {
     exclude: ['/'],
   });
+  app.use(json({ limit: '50mb' }));
+  app.use(urlencoded({ extended: true, limit: '50mb' }));
   app.enableVersioning({
     type: VersioningType.URI,
   });
