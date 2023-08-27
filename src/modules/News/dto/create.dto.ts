@@ -1,6 +1,6 @@
 import { Transform } from "class-transformer";
-import { ApiProperty } from "@nestjs/swagger";
-import { MinLength } from "class-validator";
+import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
+import { IsArray, IsString, MinLength } from "class-validator";
 
 export class NewsCreateDto {
 	@ApiProperty()
@@ -13,8 +13,17 @@ export class NewsCreateDto {
 	@Transform(({ value }) => value?.toLowerCase().trim())
 	text: string;
 
-	@ApiProperty()
-	@MinLength(1)
-	@Transform(({ value }) => value?.toLowerCase().trim())
-	tag: string;
+	@ApiPropertyOptional()
+	@IsArray()
+	@IsString({
+		each: true,
+	})
+	@Transform(({ value }) => {
+		if (value) {
+			return value.map((v: string) => v.toLowerCase().trim());
+		}
+
+		return [];
+	})
+	tags: string[];
 }

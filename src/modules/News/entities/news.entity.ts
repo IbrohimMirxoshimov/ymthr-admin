@@ -22,8 +22,11 @@ export class NewsEntity {
 	})
 	text: string;
 
-	@Column()
-	tag: string;
+	@Column({
+		type: "simple-array",
+		default: [],
+	})
+	tags: string[];
 
 	@CreateDateColumn()
 	createdAt: Date;

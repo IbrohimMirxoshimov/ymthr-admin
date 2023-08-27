@@ -24,7 +24,6 @@ import { GetListQuery } from "src/utils/types/express.type";
 @ApiTags("News")
 @Controller({
 	path: "news",
-	version: "1",
 })
 export class MainController {
 	constructor(private readonly service: NewsService) {}

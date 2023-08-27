@@ -70,8 +70,9 @@ export class GetListQuery {
   @IsOptional()
   public order: SqlOrderEnum = SqlOrderEnum.DESC;
 
+  @ApiPropertyOptional()
   @IsOptional()
-  property_id?: number;
+  public sort?: string
 
   [key: string]: any;
 }

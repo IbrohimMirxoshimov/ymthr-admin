@@ -2,16 +2,11 @@ import { Body, Controller, HttpCode, HttpStatus, Post } from "@nestjs/common";
 import { ApiOkResponse, ApiTags } from "@nestjs/swagger";
 import { SignInResponse } from "./auth.classes";
 import { AuthService } from "./auth.service";
-import { AuthConfirmEmailDto } from "./dto/auth-confirm-email.dto";
 import { AuthEmailLoginDto } from "./dto/auth-email-login.dto";
-import { AuthForgotPasswordDto } from "./dto/auth-forgot-password.dto";
-import { AuthRegisterLoginDto } from "./dto/auth-register-login.dto";
-import { AuthResetPasswordDto } from "./dto/auth-reset-password.dto";
 
 @ApiTags("Auth")
 @Controller({
 	path: "auth",
-	version: "1",
 })
 export class AuthController {
 	constructor(public service: AuthService) {}

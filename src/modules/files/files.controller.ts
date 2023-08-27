@@ -19,7 +19,6 @@ import { FilesService } from "./files.service";
 @ApiTags("Files")
 @Controller({
 	path: "files",
-	version: "1",
 })
 export class FilesController {
 	constructor(private readonly filesService: FilesService) {}

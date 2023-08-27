@@ -1,11 +1,13 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { ILike, In, ObjectLiteral, Repository } from 'typeorm';
-import { IPaginationOptions } from './types/pagination-options';
 
-export function getPaginationOptions(query: IPaginationOptions) {
+export function getPaginationOptions(query: any) {
   return {
     skip: (query.page - 1) * query.limit,
     take: query.limit,
+    order: {
+      [query.order_by || "createdAt"]: query.order,
+    },
   };
 }
 export function isExistWithProperty(

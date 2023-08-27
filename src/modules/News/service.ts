@@ -21,7 +21,9 @@ export class NewsService {
 
 	async getList(query: GetListQuery) {
 		return paginatedResponse(
-			await this.repository.findAndCount(getPaginationOptions(query)),
+			await this.repository.findAndCount({
+				...getPaginationOptions(query),
+			}),
 			query
 		);
 	}
