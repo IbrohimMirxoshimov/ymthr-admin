@@ -5,16 +5,16 @@ import { MinLength } from "class-validator";
 export class NewsCreateDto {
 	@ApiProperty()
 	@MinLength(1)
-	@Transform(({ value }) => value?.toLowerCase().trim())
+	@Transform(({ value }) => value?.trim())
 	title: string;
 
 	@ApiProperty()
 	@MinLength(1)
-	@Transform(({ value }) => value?.toLowerCase().trim())
+	@Transform(({ value }) => value?.trim())
 	description: string;
 
 	@ApiProperty()
 	@MinLength(1)
-	@Transform(({ value }) => value?.toLowerCase().trim())
+	@Transform(({ value }) => value?.trim())
 	category: string;
 }
