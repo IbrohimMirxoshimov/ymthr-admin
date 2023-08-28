@@ -15,18 +15,15 @@ export class NewsEntity {
 	id: number;
 
 	@Column()
-	name: string;
+	title: string;
 
 	@Column({
 		type: "text",
 	})
-	text: string;
+	description: string;
 
-	@Column({
-		type: "simple-array",
-		default: [],
-	})
-	tags: string[];
+	@Column()
+	category: string;
 
 	@CreateDateColumn()
 	createdAt: Date;
